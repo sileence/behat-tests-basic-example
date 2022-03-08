@@ -2,12 +2,14 @@
     "name": "duiliopalacios/behat-tests",
     "type": "project",
     "require-dev": {
-        "behat/behat": "^3.10"
+        "behat/behat": "^3.10",
+        "symfony/var-dumper": "^6.0",
+        "phpunit/phpunit": "^9.5"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Duiliopalacios\\BehatTests\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
@@ -15,6 +17,5 @@
             "name": "Duilio Palacios",
             "email": "duilio@styde.net"
         }
-    ],
-    "require": {}
+    ]
 }

@@ -3,15 +3,16 @@ Feature: Product basket
   As a customer
   I need to be able to put interesting products into a basket
 
-  Rules:
+  Rule:
   - VAT is 20%
   - Delivery for basket under £10 is £3
   - Delivery for basket over £10 is £2
 
   Scenario: Buying a single product under £10
-    Given there is a "Sith Lord Lightsaber", which costs £5
-    When I add the "Sith Lord Lightsaber" to the basket
+    Given there is a "Lightsaber", which costs £5
+    When I add the "Lightsaber" to the basket
     Then I should have 1 product in the basket
+    # Cost of product: £5 + VAT of £1 + Delivery cost of £3 = £9
     And the overall basket price should be £9
 
   Scenario: Buying a single product over £10
