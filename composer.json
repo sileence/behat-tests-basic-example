@@ -1,0 +1,20 @@
+{
+    "name": "duiliopalacios/behat-tests",
+    "type": "project",
+    "require-dev": {
+        "behat/behat": "^3.10"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Duiliopalacios\\BehatTests\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Duilio Palacios",
+            "email": "duilio@styde.net"
+        }
+    ],
+    "require": {}
+}
